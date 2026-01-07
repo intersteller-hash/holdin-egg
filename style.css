@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.app-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.developer {
+  color: #1a73e8;
+  margin: 4px 0;
+}
+
+.meta {
+  color: #666;
+  font-size: 14px;
+}
+
+.install-btn {
+  display: block;
+  margin: 20px 0;
+  background: #1a73e8;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* Screenshots container */
+.screenshots {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 16px 0;
+  scroll-behavior: smooth;
+}
+
+/* Screenshot card (NO absolute positioning) */
+.screen-bg {
+  box-sizing: border-box;
+  width: 138px;
+  height: 281px;
+
+  background: linear-gradient(
+    359.97deg,
+    #212450 -5.9%,
+    #2F3162 99.97%
+  );
+
+  border: 1px solid #000;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;   /* VERY IMPORTANT */
+  position: relative; /* optional, safe */
+}
+
+/* Screenshot image */
+.screen-bg img {
+  width: 120px;
+  height: auto;
+  border-radius: 14px;
+}
+
+
+
+section {
+  margin-top: 30px;
+}
+
+.review {
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.muted {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -8px;
+}
+
+.card {
+  margin-top: 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+}
+
+.ds-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.ds-row + .ds-row {
+  border-top: 1px solid #f0f0f0;
+}
+
+.ds-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6f6f6;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.ds-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.ds-sub {
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.ds-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 14px;
+  }
+
+  .app-header {
+    gap: 12px;
+  }
+
+  .app-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .install-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .screenshots {
+    gap: 12px;
+  }
+
+  .screen-bg {
+    width: 120px;
+    height: 245px;
+  }
+
+  .screen-bg img {
+    width: 104px;
+  }
+}
+
